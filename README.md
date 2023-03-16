@@ -16,3 +16,9 @@ hadoop fs -copyToLocal /input_data/trees.csv ./
 
 # Command to execute map reduce code
 hadoop jar hadoop-streaming-2.4.0.jar -files mapper.py,reducer.py -mapper mapper.py -reducer reducer.py -input /test/demo.txt -output /output
+
+#to delete any file
+#go to that folder
+rm tress.csv
+
+
